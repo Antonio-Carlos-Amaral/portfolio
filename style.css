@@ -789,10 +789,11 @@ h1 {
 
 section.menu {
     position: relative;
-    margin-top: 0;
+    top: 5px;
     margin-right: 5px;
+    align-items: center;
     width: 99%;
-    height: auto;
+    height: 20px;
     border-style: solid;
     border-width: 2px;
 }
@@ -818,7 +819,7 @@ header {
 }
 
 .menu__principal .container img {
-    width: 10px;
+    width: 20px;
 }
 
 .menu__principal__nav {
@@ -835,8 +836,8 @@ header {
 }
 
 h1 {
-    font-size: 10px;
-    margin-left: 5px;
+    font-size: 0px;
+    margin-left: 1px;
     text-align: flex-start;
     color: black;
 }
