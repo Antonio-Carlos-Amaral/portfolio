@@ -601,8 +601,14 @@ header {
 }
 
 .menu__principal__nav {
+    border-width: 2px;
     width: 600px;
     margin-left: 10px;
+}
+
+.menu__principal__nav a {   
+    width: 55px;
+    font-size: 11px;
 }
 
 h1 {
@@ -660,6 +666,14 @@ h1 {
     font-size: 30px;
 }
 
+.corpo__redes__individual p:before {    
+    content: none;
+}
+
+.corpo__redes__individual p:after {    
+    content: none;
+}
+
 .sobre__container {
     height: 400px;
 }
@@ -697,7 +711,13 @@ h1 {
     height: 50px;
     position: relative;
     flex-direction: column;
+    font-weight: 1px;
     font-size: 30px;
+}
+
+
+.pontos__fortes__total p:before {
+    content: none;
 }
 
 .hobbies__total {
@@ -797,6 +817,10 @@ header {
     justify-content: space-between;
 }
 
+.menu__principal .container img {
+    width: 10px;
+}
+
 .menu__principal__nav {
     width: 340px;
     margin-left: 1px;
@@ -827,18 +851,26 @@ h1 {
 
 #escritorio {
     border-bottom-left-radius: 0px;
-    width: 370px;
+    width: 360px;
     height: 269px;
 }
 
 #foto {
     border-bottom-right-radius: 0px;
-    width: 370px;
+    width: 360px;
     height: 269px;
 }
 
 .corpo__redes__total {
     flex-direction: column;
+}
+
+.corpo__redes__individual p:before {    
+    content: none;
+}
+
+.corpo__redes__individual p:after {    
+    content: none;
 }
 
 .pontos__fortes__total {
@@ -874,6 +906,12 @@ h1 {
 .formacao__titulo {
     font-size: 25px;
 }
+
+.formacao__cursos__item__img img {
+    justify-content: center;
+    margin-right: 40px;
+}
+
 
 .experiencia {
     height: 800px;
@@ -920,13 +958,19 @@ h1 {
 }
 
 .contato__img {
-    width: 150px;
+    width: 140px;
     margin-left: 1px;
 }   
 
 .contato__texto {
     margin-left: 5px;
     font-size: 10px;
+}
+
+
+.contato__formulario {
+    width: 95%;
+    margin-right: 10px;
 }
 
 .sobre__container {
