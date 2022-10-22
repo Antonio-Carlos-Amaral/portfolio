@@ -800,7 +800,8 @@ section.menu {
 
 section.gap {
     width: 100%;
-    height: 70px;
+    height: 90px;
+    top: 15px;
 }
 
 header {
@@ -813,6 +814,7 @@ header {
 
 .menu__principal .container {
     width: 100%;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -820,6 +822,7 @@ header {
 
 .menu__principal .container img {
     width: 20px;
+
 }
 
 .menu__principal__nav {
@@ -829,13 +832,14 @@ header {
 
 .menu__principal__nav a {
     width: 45px;
-    font-size: 10px;
+    font-size: 9px;
     text-align: center;
     color: black;
     border-width: 1px;
 }
 
 h1 {
+    height: 20px;
     font-size: 0px;
     margin-left: 1px;
     text-align: flex-start;
@@ -844,6 +848,7 @@ h1 {
 
 .corpo__fotos__total {
     flex-direction: column;
+    padding-top: 5px;
 }
 
 .corpo__fotos__individual p {
