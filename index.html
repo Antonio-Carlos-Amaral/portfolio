@@ -56,7 +56,7 @@
 			<div class="corpo__redes__total">
 				<div class="corpo__redes__individual">
 					<p> 
-					<a href="curriculo.html">Curriculo</a>
+					<a href="#curriculo">Curriculo</a>
 					</p>
 				</div>
 				<div class="corpo__redes__individual">
@@ -138,10 +138,10 @@
 <section class="pontos__fortes">
         <h3 class="pontos__fortes" >Pontos Fortes</h3>
         	<div class="pontos__fortes__total">		
-					<p><a href="gestao.html"> Gestão de contratos</a></p>
-					<p><a href="gerenciamento.html"> Gerenciamento de projetos</a></p>					
-					<p><a href="relacionamento.html">Relacionamento com clientes</a></p>
-					<p><a href="sla.html"> SLA's | KPI's | Controle de custos</a></p>
+					<p><a href="#gestao"> Gestão de contratos</a></p>
+					<p><a href="#gerenciamento"> Gerenciamento de projetos</a></p>					
+					<p><a href="#relacionamento">Relacionamento com clientes</a></p>
+					<p><a href="#sla"> SLA's | KPI's | Controle de custos</a></p>
 			</div>
 </section>
 
@@ -265,31 +265,56 @@
         </div>  
 </section>
 
-        <div class="gap" id="contato"></div>
+        <div class="gap" id="gestao"></div>
+
+<!----Definição do formulario de pontos fortes e curriculo---->
+
+<section class="pontos__fortes__texto">
+
+                    <div class="texto__gestao" id="gestao">
+                    <iframe width="100%" height="600px" src="gestao.pdf" title="Gestão de Contratos" ></iframe>
+                    </div>  
+
+                    <div class="texto__gestao" id="gerenciamento">
+                    <iframe width="100%" height="600px" src="gerenciamento.pdf" title="Gerenciamento de projetos" ></iframe>
+                    </div>  
+
+                    <div class="texto__gestao" id="relacionamento">
+                    <iframe width="100%" height="600px" src="relacionamento.pdf" title="Relacionamento com clientes" ></iframe>
+                    </div>  
+
+                    <div class="texto__gestao" id="sla">
+                    <iframe width="100%" height="600px" src="sla.pdf" title="SLA's, KPI's e Controle de custos" ></iframe>
+                    </div>  
+
+                    <div class="texto__curriculo" id="curriculo">
+                    <iframe width="100%" height="1000px" src="c_v_amaral.pdf" title="SLA's, KPI's e Controle de custos" ></iframe>
+
+                    </div>  
+</section> 
 
 <!----Definição do formulario para contato---->
 
+
+        <div class="gap" id="contato"></div>
+
 <section class="contato">
- 	<h1 class="contato">Contato</h1>
-            <div id="contato" class="contato__contato">
-                <div class="contato__esquerda">
-                    <img class="contato__img" src="assets\contact_image.png">
-                </div>
-                <div class="contato__texto">                    
-                    <h2 class="contato__subtexto">Quer entrar em contato comigo?</h2>
-                    <h3 class="contato__subtexto">Preencha o formulário abaixo que entrarei em contato o mais rápido possível. 
-                    </h3>
-                    <div class="contato__formulario">
-                    <form action="https://formsubmit.co/carlos_ambr@yahoo.com.br" method="POST" class="form">
-                        <input class="contato__input" type="text" id="nome" placeholder="Nome" required>
-                        <input class="contato__input" type="email" id="email" placeholder="Email" required>
-                        <input class="contato__input" type="text" id="assunto" placeholder="Assunto" required>
-                        <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
-                        <button class="contato__botao" type="submit">Enviar mensagem</button>
-                    </form>
-                </div>
-                </div>
-            </div>
+    <h1 class="contato">Contato</h1>
+    <h2 class="contato">Quer entrar em contato comigo?</h2>
+    <h3 class="contato">Preencha o formulário abaixo que entrarei em contato o mais rápido possível. </h3>
+            <form action="https://formsubmit.co/carlos_ambr@yahoo.com.br" method="POST" class="form">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required />
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required />
+                    <label for="fone">Telefone</label>
+                    <input type="fone" name="fone" id="fone" required />
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/>
+                    <button type="submit">Enviar</button>
+            </form>
 </section>
 
         <div class="gap"></div>
