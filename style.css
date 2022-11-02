@@ -12,7 +12,7 @@ section.menu {
     margin-right: 10px;
     width: 100%;
    /* height: auto;*/
-    height: 40px;
+    height: 50px;
     background-color:#EAF2FD;
     border-style: solid;
     border-width: 1px;
@@ -21,13 +21,13 @@ section.menu {
 
 .gap__menu {
     width: 100%;
-    height: 50px;
+    height: 63px;
     background-color: #4F4F4F /*#F0FFF0;
 */}
 
 .gap {
     width: 100%;
-    height: 50px;
+    height: 57px;
     background-color: #F0FFF0;
     border-style: solid;
     border-right: none;
@@ -63,18 +63,25 @@ header {
 .menu__principal__nav a {
     border-style: solid;
     border-color: black;
-    width: 80px;
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
     text-align: center;
     color: black;
     font-weight: 0.1px;
     border-width: 1px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .menu__principal__nav a:hover {
     transform: scale(1.03);
     transition: 0.5s all;
     color: white;
-    background-color: black;
+    background-color: #4f4f4f;
+    border-radius: 8px;
 }
 
 h1 {
@@ -103,6 +110,10 @@ section.sobre {
     margin-left: 80px;
 }
 
+.skills {
+    background-color:  #F0FFF0;
+}
+
 .skills  h4 {
     display: flex;
     justify-content: center;
@@ -114,22 +125,29 @@ section.sobre {
 
 .skills__total {
     display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-botton: 5px;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 130px;
+    align-self: center ;
+    align-items: flex-start;
+    width: auto;
+    height: 300px;
     background-color:  #F0FFF0;
 }
 
 .skills__individual {
-    padding-top: 20px;
-    width: 120px;
-    height: 40px;
-    text-align: center;
+    padding: 50px;
+    width: 100px;
+    height: 30px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    border-radius: 15px;
     background-color: #C0C0C0;
+    box-shadow: 10px 10px 10px 0 #000000;
+
 }
 
 .corpo__fotos__total {
@@ -147,6 +165,7 @@ section.sobre {
 }
 
 #foto, #escritorio {
+    margin-top: 30px;
     width: 380px;
     height: 279px;
     display: flex;
@@ -158,7 +177,7 @@ section.sobre {
 }
 
 #foto {
-    border-bottom-right-radius: 50px;
+   border-bottom-right-radius: 50px;
 }
 
 .corpo__fotos__individual img {
@@ -179,7 +198,9 @@ section.sobre {
     border-style: solid;
     border-width: 1px;
     border-color: #808080;
+    border-radius: 10px;
     background-color: #4F4F4F;
+    box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .corpo__redes__total {
@@ -195,6 +216,7 @@ section.sobre {
     height: 120px;
     margin: 4px;
     background-color:  #808080; /*#F0FFF0; */
+
 }
 
 .corpo__redes__individual p {
@@ -202,11 +224,13 @@ section.sobre {
     margin: 30px;
     color:  #C0C0C0;
     font-size: 20px;
+    text-decoration-color: transparent;
     text-align: center;
     border-style: solid;
     border-width: 1px;
     background-color: #4F4F4F;
-    text-decoration: underline;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .corpo__redes__individual a {    
@@ -272,6 +296,9 @@ section.sobre {
     border-width: 1px;
     border-color: black;
     background-color: #C0C0C0;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0 #000000;
+
 }
 
  .pontos__fortes h3 {
@@ -312,6 +339,7 @@ section.sobre {
 }
 
 .texto__gestao, .texto__curriculo {
+    width: 99%;
     display: flax;
     border-width: 2px;
     border-color: black;
@@ -418,6 +446,7 @@ section .experiencia {
 }
 
 .experiencia__info {
+    margin-top: 10px;
     width: auto;
     height: auto;
     text-align: initial;
@@ -458,7 +487,7 @@ section .experiencia {
     height: 51px;
     font-size: 16px;
     color:  #2A7AE4;
-    background-color: F5F5F5;
+    background-color: #F5F5F5;
     border-style: solid;
     border-color: #2A7AE4;
 }
@@ -612,10 +641,12 @@ section .footer__rodape {
     background-color: #F0FFF0;
 }
 
+
 /********************************************/
 /*       configuração para tablet           */
 /********************************************/
-@media screen and (max-width:800px) {
+
+ @media screen and (max-width:800px) {
 
 section.menu {
     position: relative;
@@ -651,11 +682,21 @@ header {
     border-width: 2px;
     width: 600px;
     margin-left: 10px;
+    padding-bottom: 10px;
 }
 
-.menu__principal__nav a {   
+.menu__principal__nav a {
+    display: flex;   
     width: 55px;
-    font-size: 11px;
+    height: 8px;
+    font-size: 13px;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+
+   
+    box-shadow: 5px 5px 5px 0 #000000;
 }
 
 h1 {
@@ -731,16 +772,21 @@ h1 {
 }
 
 .skills__total {
-    height: 1400px;
+    height: 1800px;
     justify-content: space-around;
     flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
 }
 
 .skills__individual {
+    display: flex;
+    flex-wrap: nowrap;
     padding: 50px;
     width: 400px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 30px;
 }
 
@@ -843,7 +889,9 @@ section .experiencia {
     width: 99%;
     height: 150px;
 }
-}
+} 
+
+
 /********************************************/
 /*       configuração para celular          */
 /********************************************/
@@ -856,7 +904,7 @@ section.menu {
     margin-right: 5px;
     align-items: center;
     width: 99%;
-    height: 20px;
+    height: 30px;
     border-style: solid;
     border-width: 2px;
 }
@@ -893,16 +941,14 @@ header {
     margin-left: 1px;
 }
 
+
 .menu__principal__nav a {
-    width: 45px;
-    font-size: 9px;
-    text-align: center;
-    color: black;
-    border-width: 1px;
+    font-size: 14px;
+    padding-top: 5px;
 }
 
 h1 {
-    height: 20px;
+    height: 35px;
     font-size: 0px;
     margin-left: 1px;
     text-align: flex-start;
@@ -920,13 +966,13 @@ h1 {
 
 #escritorio {
     border-bottom-left-radius: 0px;
-    width: 360px;
+    width: 340px;
     height: 269px;
 }
 
 #foto {
     border-bottom-right-radius: 0px;
-    width: 360px;
+    width: 340px;
     height: 269px;
 }
 
@@ -964,6 +1010,10 @@ h1 {
     height: 450px;
 }
 
+.skills__total {  
+    height: auto;
+}
+   
 .skills__individual {    
     width: 200px;   
 }
@@ -1011,15 +1061,18 @@ h1 {
 }
 
 .experiencia__botao__repo {    
-    width: 50px;
+    width: 60px;
     height: 20px;
     font-size: 8px;
+    margin-top: 10px;
+
 }
 
 .experiencia__botao__demo {
-    width: 50px;
+    width: 60px;
     height: 20px;
     font-size: 8px;
+    margin-top: 10px;
 }
 
 .experiencia__total {
@@ -1033,8 +1086,20 @@ h1 {
 
 .texto__curriculo {
     width: 300px;
-    height: 1000px;
+    height: 100hw;
 }
+
+.texto__gestao, .texto__curriculo {
+    width: auto;
+}
+.contato form {
+    width: 95%;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    align-items: center;
+}
+
 
 .contato__img {
     width: 140px;
