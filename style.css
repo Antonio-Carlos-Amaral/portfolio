@@ -321,14 +321,12 @@ section.sobre {
     content: "🟊";
 }
 
-.pontos__fortes__total a {
-    color: black;
+.pontos__fortes__total a {    
     text-decoration: none;
     font-family: montserrat;
+    color: black;
     font-size: 17px;
     font-weight: 700;
-
-
 }
 
 .pontos__fortes__total a:hover {
