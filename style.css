@@ -61,13 +61,14 @@ header {
 }
 
 .menu__principal__nav a {
+    display: flex;
+    justify-content: center;
     border-style: solid;
     border-color: black;
     width: 100px;
-    height: 20px;
+    height: 30px;
     font-size: 20px;
-    padding-bottom: 10px;
-    text-align: center;
+    text-decoration: none;
     color: black;
     font-weight: 0.1px;
     border-width: 1px;
@@ -215,7 +216,6 @@ section.sobre {
     height: 120px;
     margin: 4px;
     background-color:  #808080; /*#F0FFF0; */
-
 }
 
 .corpo__redes__individual p {
@@ -223,7 +223,6 @@ section.sobre {
     margin: 30px;
     color:  #C0C0C0;
     font-size: 20px;
-    text-decoration-color: transparent;
     text-align: center;
     border-style: solid;
     border-width: 1px;
@@ -234,6 +233,8 @@ section.sobre {
 
 .corpo__redes__individual a {    
     color:  #C0C0C0;
+    text-decoration: none;
+
 }
 
 .corpo__redes__individual p:before {    
@@ -311,8 +312,9 @@ section.sobre {
     width: 300px;
     height: 40px;
     border-style: solid;
-     border-width: 1px;
+    border-width: 1px;
     border-color: black;
+    border-radius: 8px;
 } 
 
 .pontos__fortes__total p:before {
@@ -321,6 +323,12 @@ section.sobre {
 
 .pontos__fortes__total a {
     color: black;
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 17px;
+    font-weight: 700;
+
+
 }
 
 .pontos__fortes__total a:hover {
@@ -678,6 +686,7 @@ header {
 }
 
 .menu__principal__nav {
+    justify-content: center;
     border-width: 2px;
     width: 600px;
     margin-left: 10px;
@@ -685,14 +694,12 @@ header {
 }
 
 .menu__principal__nav a {
-    display: flex;   
-    width: 55px;
-    height: 8px;
-    font-size: 13px;
+    display: flex;  
+    justify-content: center; 
     align-items: center;
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-top: 10px;   
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
     box-shadow: 5px 5px 5px 0 #000000;
 }
 
@@ -800,7 +807,7 @@ h1 {
 .pontos__fortes__total p {    
     width: 60%;
     height: 50px;
-    position: relative;
+    padding-top: 20px;
     flex-direction: column;
     font-weight: 1px;
     font-size: 20px;
@@ -941,8 +948,11 @@ header {
 
 
 .menu__principal__nav a {
+    width: 70px;
+    height: 25px;
     font-size: 14px;
-    padding-top: 5px;
+    margin-top: 5px;
+    margin-left: 1px;
 }
 
 h1 {
