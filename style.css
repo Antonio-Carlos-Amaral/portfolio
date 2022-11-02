@@ -127,13 +127,12 @@ section.sobre {
     display: flex;
     justify-content: space-around;
     margin-left: 5px;
-    margin-botton: 5px;
     flex-wrap: wrap;
     text-align: center;
     align-self: center ;
     align-items: flex-start;
     width: auto;
-    height: 300px;
+    height: 350px;
     background-color:  #F0FFF0;
 }
 
@@ -693,9 +692,7 @@ header {
     align-items: center;
     padding-left: 20px;
     padding-top: 10px;
-    margin-top: 10px;
-
-   
+    margin-top: 10px;   
     box-shadow: 5px 5px 5px 0 #000000;
 }
 
@@ -745,6 +742,7 @@ h1 {
 
 .corpo__redes__individual {
     flex-direction: column;
+     height: 10px;
 }
 
 .corpo__redes__individual p {
@@ -777,7 +775,7 @@ h1 {
     flex-direction: column;
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: 30px;
+    margin-bottom: 1px;
 }
 
 .skills__individual {
@@ -805,7 +803,7 @@ h1 {
     position: relative;
     flex-direction: column;
     font-weight: 1px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .pontos__fortes__total p:before {
